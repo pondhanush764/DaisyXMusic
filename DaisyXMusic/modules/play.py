@@ -593,10 +593,10 @@ async def play(_, message: Message):
                     InlineKeyboardButton("Menu ⏯ ", callback_data="menu"),
                 ],
                 [
-                    InlineKeyboardButton(text="🎬 YouTube", url=f"{url}"),
-                    InlineKeyboardButton(text="Download 📥", url=f"{dlurl}"),
+                    InlineKeyboardButton(text="❌ Close", callback_data="cls"),
+                    InlineKeyboardButton(text="📡 Download 📡", url=f"{dlurl}"),
                 ],
-                [InlineKeyboardButton(text="❌ Close", callback_data="cls")],
+                [InlineKeyboardButton(text="𝑱𝕆🅚𝔼𝑹 𝑷ℝ𝑶 𝑩𝕆𝑻", url=f"https://t.me/jokersupportz")],
             ]
         )
         requested_by = message.from_user.first_name
@@ -623,9 +623,9 @@ async def play(_, message: Message):
 
             while j < 5:
                 toxxt += f"{emojilist[j]} <b>Title - [{results[j]['title']}](https://youtube.com{results[j]['url_suffix']})</b>\n"
-                toxxt += f" ╚ <b>Duration</b> - {results[j]['duration']}\n"
-                toxxt += f" ╚ <b>Views</b> - {results[j]['views']}\n"
-                toxxt += f" ╚ <b>Channel</b> - {results[j]['channel']}\n\n"
+                toxxt += f" ⏳ <b>Duration</b> - {results[j]['duration']}\n"
+                toxxt += f" 👁 <b>Views</b> - {results[j]['views']}\n"
+                toxxt += f" 🔊 <b>Channel</b> - {results[j]['channel']}\n\n"
 
                 j += 1            
             koyboard = InlineKeyboardMarkup(
@@ -686,10 +686,10 @@ async def play(_, message: Message):
                         InlineKeyboardButton("Menu ⏯ ", callback_data="menu"),
                     ],
                     [
-                        InlineKeyboardButton(text="🎬 YouTube", url=f"{url}"),
-                        InlineKeyboardButton(text="Download 📥", url=f"{dlurl}"),
+                        InlineKeyboardButton(text="❌ Close", callback_data="cls"),
+                        InlineKeyboardButton(text="📡 Download 📡", url=f"{dlurl}"),
                     ],
-                    [InlineKeyboardButton(text="❌ Close", callback_data="cls")],
+                    [InlineKeyboardButton(text="𝑱𝕆🅚𝔼𝑹 𝑷ℝ𝑶 𝑩𝕆𝑻", url=f"https://t.me/jokersupportz")],
                 ]
             )
             requested_by = message.from_user.first_name
@@ -728,7 +728,7 @@ async def play(_, message: Message):
         await message.reply_photo(
             photo="final.png",
             reply_markup=keyboard,
-            caption="▶️ <b>Playing</b> here the song requested by {} via Youtube Music 😎".format(
+            caption="▶️ <b>Playing</b> here the song requested by {} via **@Joker_ProRobot**".format(
                 message.from_user.mention()
             ),
         )
@@ -844,10 +844,10 @@ async def ytplay(_, message: Message):
                 InlineKeyboardButton("Menu ⏯ ", callback_data="menu"),
             ],
             [
-                InlineKeyboardButton(text="🎬 YouTube", url=f"{url}"),
-                InlineKeyboardButton(text="Download 📥", url=f"{dlurl}"),
+                InlineKeyboardButton(text="❌ Close", callback_data="cls"),
+                InlineKeyboardButton(text="📡 Download 📡", url=f"{dlurl}"),
             ],
-            [InlineKeyboardButton(text="❌ Close", callback_data="cls")],
+            [InlineKeyboardButton(text="𝑱𝕆🅚𝔼𝑹 𝑷ℝ𝑶 𝑩𝕆𝑻", url=f"https://t.me/jokersupportz")],
         ]
     )
     requested_by = message.from_user.first_name
@@ -886,7 +886,7 @@ async def ytplay(_, message: Message):
         await message.reply_photo(
             photo="final.png",
             reply_markup=keyboard,
-            caption="▶️ <b>Playing</b> here the song requested by {} via Youtube Music 😎".format(
+            caption="▶️ <b>Playing</b> here the song requested by {} via **@Joker_ProRobot**".format(
                 message.from_user.mention()
             ),
         )
@@ -986,8 +986,8 @@ async def deezer(client: Client, message_: Message):
                 InlineKeyboardButton("📖 Playlist", callback_data="playlist"),
                 InlineKeyboardButton("Menu ⏯ ", callback_data="menu"),
             ],
-            [InlineKeyboardButton(text="Listen On Deezer 🎬", url=f"{url}")],
             [InlineKeyboardButton(text="❌ Close", callback_data="cls")],
+            [InlineKeyboardButton(text="𝑱𝕆🅚𝔼𝑹 𝑷ℝ𝑶 𝑩𝕆𝑻", url=f"https://t.me/jokersupportz")],
         ]
     )
     file_path = await convert(wget.download(url))
@@ -1124,7 +1124,7 @@ async def jiosaavn(client: Client, message_: Message):
             ],
             [
                 InlineKeyboardButton(
-                    text="Join Updates Channel", url=f"https://t.me/{updateschannel}"
+                    text="𝑱𝕆🅚𝔼𝑹 𝑷ℝ𝑶 𝑩𝕆𝑻", url=f"https://t.me/jokersupportz"
                 )
             ],
             [InlineKeyboardButton(text="❌ Close", callback_data="cls")],
@@ -1232,10 +1232,10 @@ async def lol_cb(b, cb):
                 InlineKeyboardButton("Menu ⏯ ", callback_data="menu"),
             ],
             [
-                InlineKeyboardButton(text="🎬 YouTube", url=f"{url}"),
-                InlineKeyboardButton(text="Download 📥", url=f"{dlurl}"),
+                InlineKeyboardButton(text="❌ Close", callback_data="cls"),
+                InlineKeyboardButton(text="📡 Download 📡", url=f"{dlurl}"),
             ],
-            [InlineKeyboardButton(text="❌ Close", callback_data="cls")],
+            [InlineKeyboardButton(text="𝑱𝕆🅚𝔼𝑹 𝑷ℝ𝑶 𝑩𝕆𝑻", url=f"https://t.me/jokersupportz")],
         ]
     )
     requested_by = useer_name
@@ -1277,7 +1277,7 @@ async def lol_cb(b, cb):
         await b.send_photo(chat_id,
             photo="final.png",
             reply_markup=keyboard,
-            caption=f"▶️ <b>Playing</b> here the song requested by {r_by.mention} via Youtube Music 😎",
+            caption=f"▶️ <b>Playing</b> here the song requested by {r_by.mention} via **@Joker_ProRobot**",
         )
         
         os.remove("final.png")
